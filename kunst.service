@@ -1,0 +1,10 @@
+[Unit]
+Description=Mache Kunst
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/home/pi/sich_niederlassen/kunst.py > /home/pi/kunst.log 2>&1
+
+[Install]
+WantedBy=multi-user.target
